@@ -14,6 +14,7 @@ export const Step = (props) => {
       value: e.target.elements[input].value,
     }));
     props.setFormData(formValues);
+    props.setCurrentStep(1)
   };
 
   return (

@@ -3,6 +3,7 @@ import "./App.css";
 import { Input } from "./components/input/Input";
 import { Step } from "./components/steps/Step";
 import { Step2 } from "./components/steps/Step2";
+import { Step1 } from "./components/steps/Step1";
 
 function App() {
   const [formData, setFormData] = useState();
@@ -14,19 +15,24 @@ function App() {
   const steps = [
     {
       number: 0,
-      component: <Step setFormData={setFormData} />,
+      component: <Step1 setCurrentStep={setCurrentStep} />,
     },
     {
       number: 1,
+      component: <Step setFormData={setFormData} setCurrentStep={setCurrentStep} />,
+    },
+    {
+      number: 2,
       component: <Step2 setFormData={setFormData} />,
     },
   ];
+  
   const result = steps.find((step) => step.number === currentStep);
   return (
     <>
-      <span>{currentStep}</span>
+      {/* <span>{currentStep}</span>
       <button onClick={() => handleButton(currentStep + 1)}>+</button>
-      <button onClick={() => handleButton(currentStep - 1)}>-</button>
+      <button onClick={() => handleButton(currentStep - 1)}>-</button> */}
       {result ? result.component : console.log("Não é objeto.")}
     </>
   );
