@@ -4,7 +4,7 @@ export const Input = (props) => {
   return (
     <label htmlFor={props.name}>
       <input
-        type={props.type || "text"}
+        type="text"
         name={props.name}
         id={props.id}
         placeholder={props.placeholder}

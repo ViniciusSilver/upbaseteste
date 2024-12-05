@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Input } from "../input/Input";
 import Button from "../button/Button";
 import { Select } from "../input/Select";
+import { TextArea } from "../input/TextArea";
 
 export const Step = (props) => {
   const handleSubmit = (e) => {
@@ -17,13 +18,16 @@ export const Step = (props) => {
 
   return (
     <>
+    <h2>Para começarmos, precisamos de alguns dados</h2>
       <form onSubmit={handleSubmit}>
         <Input name="imovel" id="imovel" placeholder="Nome do Imovel" />
-        <Input
-          type="textarea"
+        <p>
+          O nome do imóvel será exibido na sua tela inicial e na reserva para o hóspede
+        </p>
+        <TextArea
           name="descricao"
           id="descricao"
-          placeholder="Descrição"
+          placeholder="Descrição" 
         />
         <Input name="cep" id="cep" placeholder="CEP" />
         <Input name="endereco" id="endereco" placeholder="Endereço" />
