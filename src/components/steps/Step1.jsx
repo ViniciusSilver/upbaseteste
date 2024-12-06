@@ -5,7 +5,7 @@ export const Step1 = (props) => {
   return (
     <div className="container">
       <div className="container-header">
-        <img className="seta" src={Seta} alt="seta" />
+        <img className="seta" src={Seta} onClick={props.handleSteps.decrement} alt="seta" />
         <p className="cadastroimovel">
           {" "}
           <span>+ </span>Cadastrar imóvel
@@ -23,9 +23,7 @@ export const Step1 = (props) => {
         </p>
         <button
           className="cadastrarprimeiro"
-          onClick={() => {
-            props.setCurrentStep(1);
-          }}
+          onClick={props.handleSteps.increment}
         >
           Cadastrar meu primeiro imóvel
         </button>

@@ -1,0 +1,12 @@
+select {
+    width: 113px;
+    height: 56px;
+    gap: 0px;
+    border-radius: 4px;
+    border: 1px solid #00000029;
+    cursor: pointer;
+    padding-left: 10px;
+}
+option{
+    font-family: "Jura", sans-serif;
+}

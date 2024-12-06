@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./input.css"
+import "./textarea.css"
 
 export const TextArea = (props) => {
     const [count, setCount] = useState(0)
@@ -8,14 +9,15 @@ export const TextArea = (props) => {
     }
   return (
     <label htmlFor={props.name}>
-      <textarea onChange={handleChange}
+      <textarea
+        onChange={handleChange}
         name={props.name}
         id={props.id}
         placeholder={props.placeholder}
-        rows='4'
+        rows="4"
         required
       />
-      {count}/250
+      <div className="count">{count}/250</div>
     </label>
   );
 };

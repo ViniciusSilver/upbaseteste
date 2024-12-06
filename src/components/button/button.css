@@ -12,3 +12,7 @@ button {
     line-height: 24px;
     text-align: center;
 }
+button:hover{
+    background: #541a86;
+    color: #e7e3e3;
+}

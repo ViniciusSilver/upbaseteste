@@ -1,0 +1,124 @@
+.container1 {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    margin-top: 40px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 24px;
+    gap: 10px;
+}
+
+img {
+    margin-top: 80px;
+    margin-left: 16px;
+   
+}
+
+.texthandle {
+    font-family: Jura;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    padding-right: 50px;
+
+}
+
+.form {
+    width: Fill 345px;
+    height: Hug 524px;
+    gap: 16px;
+
+}
+
+.inputs {
+    width: 345px;
+    height: 56px;
+    border-radius: 4px;
+    border: 1px;
+
+}
+
+.warning {
+    font-family: Jura;
+    font-size: 12px;
+    font-weight: 100;
+    text-align: left;
+    color: #10002B;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.section2 input{
+    width: 160px;
+    
+}
+.section3{
+    display: flex;
+        flex-direction: row;
+        gap: 20px;
+}
+.section3 input {
+    width: 220px;
+}
+@media (min-width: 1250px) {
+    .container1 {
+        width: 75%;
+    }
+         #imoveltipo {
+             width: 50%;
+         }
+}
+.section1{
+    white-space: normal;
+}
+.container-header1{
+    display: grid;
+    text-align: left;
+    justify-content: center;
+    gap: 25px;
+}
+#imoveltipo{
+    width: 330px;
+    margin-bottom: 180px;
+    align-self: start;
+}
+.container-header1 button{
+    text-align: center;
+    width: 330px;
+
+}
+.checkers{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 30px;
+    gap: 20px;
+    max-width: 500px;
+}
+
+.checkers div{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.tags{
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        color: #0000005C;
+        margin-bottom: 10px;
+}
+.form-checkbox{
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+.form-checkbox button{
+    margin-top: 20px;
+}
