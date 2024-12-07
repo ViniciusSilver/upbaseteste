@@ -5,7 +5,12 @@ export const Step1 = (props) => {
   return (
     <div className="container">
       <div className="container-header">
-        <img className="seta" src={Seta} onClick={props.handleSteps.decrement} alt="seta" />
+        <img
+          className="seta"
+          src={Seta}
+          onClick={props.handleSteps.decrement}
+          alt="seta"
+        />
         <p className="cadastroimovel">
           {" "}
           <span>+ </span>Cadastrar imóvel
@@ -13,8 +18,12 @@ export const Step1 = (props) => {
       </div>
       <h1 className="welcome">Bem-Vindo, Raphael!</h1>
       <div>
-        <button className="flat" type="button">Todos os flats</button>
-        <button  className='indisponivel' type="button">Indisponiveis</button>
+        <button className="flat" type="button">
+          Todos os flats
+        </button>
+        <button className="indisponivel" type="button">
+          Indisponiveis
+        </button>
       </div>
       <div className="content">
         <img className="icone" src={Icon} alt="icone triste" />

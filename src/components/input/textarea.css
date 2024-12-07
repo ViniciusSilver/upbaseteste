@@ -10,7 +10,8 @@ textarea {
     padding: 10px;
     resize: none;
 }
-.count{
+
+.count {
     text-align: end;
     font-size: 10px;
 }

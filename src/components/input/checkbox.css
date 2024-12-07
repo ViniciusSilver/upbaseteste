@@ -5,11 +5,13 @@
     height: 34px;
     transform: scale(0.5);
 }
+
 .switch input {
     opacity: 0;
     width: 0;
     height: 0;
 }
+
 .slider {
     position: absolute;
     cursor: pointer;
@@ -22,6 +24,7 @@
     -webkit-transition: .4s;
     transition: .4s;
 }
+
 .slider:before {
     position: absolute;
     content: "";
@@ -33,6 +36,7 @@
     -webkit-transition: .4s;
     transition: .4s;
 }
+
 input:checked+.slider {
     background-color: #7B2CBF;
 }

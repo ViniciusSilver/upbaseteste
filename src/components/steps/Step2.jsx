@@ -4,17 +4,17 @@ import "./steps1.css";
 import Button from "../button/Button";
 import { Select } from "../input/Select";
 export const Step2 = (props) => {
-    const handleSubmit = (e) => {
-      e.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-      const inputs = ["imoveltipo"];
-      const formValues = inputs.map((input) => ({
-        input,
-        value: e.target.elements[input].value,
-      }));
-      props.setFormData(formValues);
-      props.handleSteps.increment();
-    };
+    const inputs = ["imoveltipo"];
+    const formValues = inputs.map((input) => ({
+      input,
+      value: e.target.elements[input].value,
+    }));
+    props.setFormData(formValues);
+    props.handleSteps.increment();
+  };
   return (
     <div className="container1">
       <form className="form" onSubmit={handleSubmit}>

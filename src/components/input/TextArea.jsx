@@ -1,12 +1,12 @@
 import { useState } from "react";
-import "./input.css"
-import "./textarea.css"
+import "./input.css";
+import "./textarea.css";
 
 export const TextArea = (props) => {
-    const [count, setCount] = useState(0)
-    const handleChange = (e)=>{
-        setCount(e.target.value.length)    
-    }
+  const [count, setCount] = useState(0);
+  const handleChange = (e) => {
+    setCount(e.target.value.length);
+  };
   return (
     <label htmlFor={props.name}>
       <textarea
